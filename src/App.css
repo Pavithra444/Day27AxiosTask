@@ -1,0 +1,156 @@
+
+body{
+  background-color: azure;
+}
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form input {
+  padding: 8px;
+  margin: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.user-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+
+.card-actions button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background-color: #0056b3;
+}
+.user-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Adds space between the cards */
+  padding: 20px;
+  
+}
+
+.user-card {
+  background-color: #f9f9f9; /* Light background color for the card */
+  border: 1px solid #ddd; /* Light border around the card */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .user-cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .user-cards-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+/* Button container styling */
+.button-container {
+  display: flex; /* Align buttons horizontally */
+  gap: 10px; /* Add space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 15px; /* Add space above the buttons */
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Update button */
+button[type='submit'] {
+  background-color: #4CAF50; /* Green for the Update button */
+  color: white;
+}
+
+/* Cancel button */
+button[type='button'] {
+  background-color: #f44336; /* Red for the Cancel button */
+  color: white;
+}
+
+/* Hover effects */
+button[type='submit']:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button[type='button']:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
